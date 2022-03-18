@@ -1,4 +1,12 @@
 /* SET GLOBAL STYLES */
+:root {
+  --main-color: rgb(255, 195, 4);
+  --header-color:rgb(234, 173, 0);
+  --btn-color:rgb(1, 189, 204);
+  --p-color:rgb(44, 46, 60);
+  --
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -26,25 +34,399 @@ a{
   transition: .4s all ease-in-out;
 }
 
+li{
+  list-style-type:none;
+}
+
+p{
+  font-size: 25px;
+  text-align: justify;
+  margin-bottom: 30px;
+  color: rgb(44, 46, 60);
+}
+
+.title-section{
+  font-size: 70px;
+  text-align: center;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+}
+/* /////////////////////////////////////////////////////////////////// */
+
+
 .imagen-responsive{
   max-width: 100%;
   width: 100%;
 }
 
 /* HEADER */
+.header-main{
+  background-color: rgb(255, 195, 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-menu{
+  background-color: rgb(234, 173, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.logotipo{
+  width: 90px;
+}
+
+.menu-desktop{
+  display: flex;
+  align-items: center;
+}
+
+.menu-desktop-links{
+  display: flex;
+}
+
+.link-menu{
+  display: block;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 70px;
+  padding: 0 20px;
+}
+
+.link-menu:hover{
+  box-shadow:0 -5px 0 0 white inset;
+}
+
+.search-header{
+  height: 50px;
+  width: 200px;
+  outline: none;
+  border: none;
+  background-color: rgb(255, 197, 1);
+  box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, .1)
+
+}
+
+.form-header{
+  display: flex;
+  margin-left: 30px;
+}
+
+.btn-search-header{
+  margin: 0;
+  height: 50px;
+  width: 70px;
+  outline: none;
+  border: none;
+  background-color: rgb(1, 189, 204);
+  cursor: pointer;
+  box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, .1)
+}
+
+input{
+  -webkit-appearance:none;
+  transition: .4s all;
+  padding: 0 1rem;
+  font-size:1.3rem;
+  color: white;
+}
+
+::placeholder{
+  color: white;
+}
+
+::webkit-input-placeholder{
+  color: #9c9c9c;
+}
+
+::moz-placeholder{
+  color: #9c9c9c;
+}
+
+::ms-input-placeholder{
+  color: #9c9c9c;
+}
+
+/* MENU MOBILE */
+.menu-mobile{
+  display: none;
+}
+
+@media only screen and (max-width:820px){
+
+  .main-menu{
+    flex-direction: column;
+  }
+
+  .menu-desktop{
+    display: none;
+  }
+
+  .menu-mobile{
+    display: flex;
+  }
+
+  .menu-mobile-links{
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(234, 173, 0);
+    width: 100%;
+  }
+
+  .link-menu{
+    font-size: 1rem;
+  }
+
+  .logotipo{
+    text-align: center;
+    width: 100%;
+  }
+
+  .form-header{
+    width: 100%;
+    margin: 1rem 0 0;
+  }
+
+}
 
 
+/* //////////////////////////////////////////////////////////////////////// */
+
+/* SECTION HERO */
+.section-hero{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rem 0 4.5rem 0;
+  min-height: 90vh;
+}
+
+.col-left-hero{
+  width: 650px;
+  padding: 2rem;
+}
+
+.col-right-hero{
+  width: 50%;
+  text-align: center;
+}
+
+.col-left-hero p{
+  font-size: 25px;
+  color: white;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.title-hero{
+  color:white;
+  margin-bottom: 20px;
+  font-size: 65px;
+  font-weight: 600;
+  font-family: 'roboto'
+}
+
+.imagen-hero{
+  width: 385px;
+}
+
+.botons{
+  display: flex;
+}
+
+.btns{
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  width: 165px;
+  border-radius: 6px;
+  line-height: 60px;
+}
+
+.btn-blue-hero{
+  background-color: rgb(2, 192, 198);
+  margin-right: 30px;
+  border: 3px solid rgb(2, 192, 198);
+}
+
+.btn-hero{
+  background-color: rgb(250, 196, 0);
+  border: 3px solid white;
+}
+
+.btns:hover{
+  transform:scale(.85);
+}
 
 
+/* HERO MOBILE */
+@media only screen and (max-width:820px){
+  .col-right-hero{
+    display: none;
+  }
+
+  .botons{
+    justify-content: center;
+  }
+
+  .section-hero{
+    padding: 10rem 0 1rem;
+    min-height: 90vh;
+  }
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
 
 
+/* Section "Our Services" */
+.section-ourservice{
+  background-color: white;
+}
 
+.section-ourservice .container{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
+}
 
+.title-ourservice{
+  margin-bottom: 20px;
+  color: rgb(44, 46, 60);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'roboto'
+}
 
+.col-left-ourservice{
+  width: 50%;
+  padding: 2rem;
+}
 
+.col-left-ourservice p{
+  color: rgb(44, 46, 60);
+  text-align: left;
+}
 
+.col-right-ourservice{
+  width: 50%;
+  padding: 2rem;
+}
 
+.btn-ourservice{
+  background-color: rgb(251, 201, 0);
+}
 
+.box-imagen-ourservice{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-play{
+    position: absolute;
+}
+
+/* Section Mobile "Our Services"  */
+@media only screen and (max-width:820px){
+  .section-ourservice .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-left-ourservice{
+    width: 100%;
+    text-align: center;
+  }
+
+  .col-left-ourservice p{
+    text-align: center;
+  }
+
+  .col-right-ourservice{
+    width: 100%;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .btn-ourservice{
+    margin: auto;
+  }
+}
+
+/* Section "Services" */
+.section-services{
+  background-color: var(--main-color);
+}
+
+.section-services .container{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-services .title-section{
+  margin-top: 4rem;
+  color: white;
+}
+
+.section-services .flexbox-services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-services{
+  margin: 35px;
+  text-align: center;
+}
+
+.title-section + p{
+  text-align: center;
+  width: 60%;
+  font-size: 30px;
+  color: white;
+}
+
+.title-services{
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.box-services p{
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.box-imagen-services{
+  margin-bottom: 20px;
+}
 
 footer{
   align-self: flex-end;
