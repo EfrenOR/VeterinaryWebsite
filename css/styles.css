@@ -556,7 +556,180 @@ input{
 }
 
 /* SECTION TEAM - MOBILE */
+@media only screen and (max-width:820px){
+  .box-imagen-team .imagen-responsive{
+    width: 50%;
+  }
+}
 
+/* SECTION Achievements */
+.section-achievements{
+  background-color: rgba(255, 195, 4, 0.85);
+  min-height: 70vh;
+}
+
+.section-achievements .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  min-height: 70vh;
+
+}
+
+.image-fondo-achievements{
+  position: absolute;
+  width: 100%;
+  max-height: 70vh;
+
+  z-index: -1;
+}
+
+.box-achievements{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-imagen-achievements{
+  width: 5.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.icon-2{
+  width: 4rem;
+}
+
+.title-box-achievements{
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.box-imagen-achievements + p{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* SECTION Achievements - MOBILE */
+@media only screen and (max-width:820px){
+  .section-achievements .container{
+    padding: 2rem 0 0 0;
+  }
+
+  .image-fondo-achievements{
+    position: absolute;
+    width: 100%;
+    min-height: 78.6vh;
+    z-index: -1;
+  }
+
+  .icon-2{
+    width: 3.5rem;
+  }
+
+  .box-imagen-achievements{
+    width: 3rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .title-box-achievements{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom:2rem;
+  }
+
+  .box-imagen-achievements + p{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+
+/* SECTION POSTS */
+.section-posts{
+  background-color: white;
+}
+
+.section-posts .title-section{
+  color: var(--p-color);
+}
+
+.section-posts .subtitle-section{
+  color: var(--p-color);
+  margin-bottom: 5rem;
+}
+
+.section-posts .container{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom:4rem;
+}
+
+.flex-posts .box-posts{
+  overflow:hidden;
+  margin-right: 2rem;
+}
+
+.section-posts .info-posts{
+  padding: 2rem;
+}
+
+.box-posts{
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.section-posts .title-posts{
+  color: var(--p-color);
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.section-posts .date-posts{
+  color: var(--btn-color);
+  font-weight: normal;
+  font-size: 1.07rem;
+}
+
+.section-posts .description-box-post{
+  color: var(--p-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.link-posts{
+  color: var(--btn-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.title-posts, .date-posts, .description-box-post{
+  margin-bottom: 1rem;
+}
+
+/* SECTION POSTS - MOBILE */
+@media only screen and (max-width:820px){
+
+
+  .flex-posts{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box-posts{
+    margin-bottom: 2rem;
+  }
+
+}
 
 footer{
   align-self: flex-end;
