@@ -1,0 +1,52 @@
+/* SET GLOBAL STYLES */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body{
+  background-color: rgb(80, 80, 80);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+header, section, main, nav, footer, article, figure{
+  display: block;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  outline: none;
+  transition: .4s all ease-in-out;
+}
+
+.imagen-responsive{
+  max-width: 100%;
+  width: 100%;
+}
+
+/* HEADER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  align-self: flex-end;
+  width: 100%;
+}
