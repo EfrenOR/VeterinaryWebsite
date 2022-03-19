@@ -162,7 +162,6 @@ input, button{
 }
 
 @media only screen and (max-width:820px){
-
   .main-menu{
     flex-direction: column;
   }
@@ -277,18 +276,20 @@ input, button{
 
 /* HERO MOBILE */
 @media only screen and (max-width:820px){
+
+
   .col-right-hero{
     display: none;
   }
 
-  .botons{
-    justify-content: center;
+  .title-hero{
+    font-size: 3.5rem;
   }
 
-  .section-hero{
-    padding: 10rem 0 1rem;
-    min-height: 90vh;
+  .col-left-hero{
+    width: 99%;
   }
+
 }
 
 /* ///////////////////////////////////////////////////////////////////// */
@@ -825,13 +826,17 @@ footer .copy{
   margin-bottom: 2rem;
 }
 
-footer .copy a{
+footer .copy a, .copy-mobile a{
   color: var(--main-color);
   box-shadow: 0 1px 0 trasparent;
 }
 
 footer .socials img:hover{
   transform: scale(1.4);
+}
+
+footer .copy-mobile{
+  display: none;
 }
 
 /* FOOTER - MOBILE*/
@@ -876,12 +881,20 @@ footer .socials img:hover{
     height: 50px;
   }
 
-  footer .copy{
+  footer .copy-mobile{
+    display: block;
     font-size: 13px;
     color: white;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 6rem;
+  }
+
+  footer .copy-mobile:last-child{
+    margin-bottom: 7rem;
+  }
+
+  footer .copy{
+    display: none
   }
 }
 
