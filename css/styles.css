@@ -63,11 +63,11 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 195, 4);
+  background-color: var(--main-color);
 }
 
 .main-menu{
-  background-color: rgb(234, 173, 0);
+  background-color: var(--header-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -111,7 +111,7 @@ p{
   width: 200px;
   outline: none;
   border: none;
-  background-color: rgb(255, 197, 1);
+  background-color: var(--main-color);
   box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, .1)
 }
 
@@ -126,7 +126,7 @@ p{
   width: 70px;
   outline: none;
   border: none;
-  background-color: rgb(1, 189, 204);
+  background-color: var(--btn-color);
   cursor: pointer;
   box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, .1)
 }
@@ -181,7 +181,7 @@ input, button{
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: rgb(234, 173, 0);
+    background-color: var(--header-color);
     width: 100%;
   }
 
@@ -232,6 +232,7 @@ input, button{
 }
 
 .title-hero{
+  text-align: left;
   color:white;
   margin-bottom: 20px;
   font-size: 65px;
@@ -259,13 +260,13 @@ input, button{
 }
 
 .btn-blue-hero{
-  background-color: rgb(2, 192, 198);
+  background-color: var(--btn-color);
   margin-right: 30px;
-  border: 3px solid rgb(2, 192, 198);
+  border: 3px solid var(--btn-color);
 }
 
 .btn-hero{
-  background-color: rgb(250, 196, 0);
+  background-color: var(--main-color);
   border: 3px solid white;
 }
 
@@ -284,7 +285,9 @@ input, button{
 
   .title-hero{
     font-size: 3.5rem;
+    text-align: center;
   }
+
 
   .col-left-hero{
     width: 99%;
@@ -309,9 +312,10 @@ input, button{
 }
 
 .title-ourservice{
+  text-align: left;
   margin-bottom: 20px;
   margin-top: 2rem;
-  color: rgb(44, 46, 60);
+  color: var(--p-color);
   font-size: 50px;
   font-weight: bold;
   font-family: 'roboto'
@@ -323,7 +327,7 @@ input, button{
 }
 
 .col-left-ourservice p{
-  color: rgb(44, 46, 60);
+  color: var(--p-color);
   text-align: left;
 }
 
@@ -333,7 +337,7 @@ input, button{
 }
 
 .btn-ourservice{
-  background-color: rgb(251, 201, 0);
+  background-color: var(--main-color);
 }
 
 .box-imagen-ourservice{
@@ -347,6 +351,14 @@ input, button{
     position: absolute;
 }
 
+.section-ourservice-second .title-ourservice, .section-ourservice-second .col-left-ourservice p{
+  text-align: right;
+}
+
+.section-ourservice-second .btn-ourservice{
+  margin-left: 70%;
+}
+
 /* Section Mobile "Our Services"  */
 @media only screen and (max-width:820px){
   .section-ourservice .container{
@@ -358,9 +370,10 @@ input, button{
   .col-left-ourservice{
     width: 100%;
     text-align: center;
+    order:-1;
   }
 
-  .col-left-ourservice p{
+  .col-left-ourservice p, .title-ourservice{
     text-align: center;
   }
 
@@ -373,15 +386,29 @@ input, button{
   .btn-ourservice{
     margin: auto;
   }
+
+  .section-ourservice-second .col-left-ourservice .title-ourservice{
+    text-align: center;
+  }
+
+  .section-ourservice-second .container .col-left-ourservice p{
+    text-align: center;
+  }
+
+  .section-ourservice-second .col-left-ourservice .btn-ourservice{
+    margin:auto;
+  }
 }
+
 /* ///////////////////////////////////////////////////////////////// */
 
 .title-section{
   font-size: 70px;
   text-align: center;
   color: white;
-  font-weight: 500;
-  margin-top: 4rem;
+  font-weight: bolder;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
 }
 
 .subtitle-section{
@@ -688,6 +715,7 @@ input, button{
 
 .section-posts .info-posts{
   padding: 2rem;
+  text-align: left;
 }
 
 .box-posts{
@@ -715,7 +743,7 @@ input, button{
 .link-posts{
   color: var(--btn-color);
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .title-posts, .date-posts, .description-box-post{
