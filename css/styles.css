@@ -541,7 +541,6 @@ input, button{
 
 .section-team .socials-team a{
   margin-left: .6rem;
-
 }
 
 .section-team .socials-team i:hover{
@@ -555,6 +554,10 @@ input, button{
   font-size: 1.5rem;
   width: 35px;
   line-height: 35px;
+}
+
+.section-team .box-template-team{
+  overflow: visible;
 }
 
 /* SECTION TEAM - MOBILE */
@@ -744,6 +747,7 @@ footer .container{
   margin: auto;
   display: flex;
   padding: 7rem 4rem 8rem;
+  text-align: left;
 }
 
 footer .title-footer{
